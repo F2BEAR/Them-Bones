@@ -1,7 +1,7 @@
 {
   "name": "them-bones",
   "version": "0.0.1",
-  "description": "this is a skeleton for a node API with express, mongoose, dotenv, nodemailer, webpack, jest and more.",
+  "description": "This is a simple CLI Tool for generating REST APIs with Node-JS with Express-JS.",
   "main": "index.js",
   "bin": {
     "thembones": "./bin/index.js",
