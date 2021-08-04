@@ -63,3 +63,30 @@ exports.login = (req, res, next) => {
       next(error)
     })
 }
+
+exmports.userUpdate = (req, res, next) => {
+  User.findOne({ name: req.body.name })
+    .then((user) => {
+      if (!user) {
+        throw new ErrorHandler(401, 'User not found!')
+      } else {
+        user.name = req.body.name
+        user.rol = req.body.rol
+        user.email = req.body.name
+        user.password = hash
+        user.save((err, data) => {
+          if (err) {
+            throw new ErrorHandler(500, err)
+          }
+          if (data) {
+            res.status(201).json({
+              message: 'User added successfully!'
+            })
+          }
+        })
+      }
+    })
+    .catch((error) => {
+      next(error)
+    })
+}
