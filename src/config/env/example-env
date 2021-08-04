@@ -1,0 +1,13 @@
+NODE_ENV=EXAMPLE
+PORT=EXAMPLE
+MONGOPORT=EXAMPLE
+MONGOURI=EXAMPLE
+MONGODB=EXAMPLE
+TOKENSECRET=EXAMPLE
+URL=EXAMPLE
+SERVERMAIL=EXAMPLE
+USERMAIL=EXAMPLE
+PASSWORDMAIL=EXAMPLE
+PORTMAIL=EXAMPLE
+
+Para que esto funcione modifica el nombre de este archivo por un NODE_ENV valido seguido de .env; por ejemplo production.env o development.env

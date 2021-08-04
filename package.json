@@ -1,0 +1,51 @@
+{
+  "name": "them-bones",
+  "version": "1.0.0",
+  "description": "this is a skeleton for a node API with express, mongoose, dotenv, nodemailer, webpack, jest and more.",
+  "main": "index.js",
+  "bin": {
+    "thembones": "./bin/index.js",
+    "ThemBones": "./bin/index.js",
+    "THEMBONES": "./bin/index.js",
+    "themBones": "./bin/index.js"
+  },
+  "private": true,
+  "preferGlobal": true,
+  "scripts": {
+    "test": "jest --colors --detectOpenHandles",
+    "fix": "npx standard --fix",
+    "start": "set NODE_ENV=development&& nodemon .",
+    "prod": "node dist/api.min.build.js",
+    "watch": "webpack --watch",
+    "build": "webpack --node-env production --env production"
+  },
+  "author": "F2BEAR",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "boxen": "^5.0.1",
+    "colors": "^1.4.0",
+    "commander": "^8.1.0",
+    "concurrently": "^6.2.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.13.5",
+    "mongoose-unique-validator": "^2.0.3",
+    "nodemailer": "^6.6.3",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5",
+    "dotenv-webpack": "^7.0.3",
+    "jest": "^27.0.6",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.12",
+    "standard": "^16.0.3",
+    "supertest": "^6.1.4",
+    "terser-webpack-plugin": "^5.1.4",
+    "webpack": "^5.48.0",
+    "webpack-cli": "^4.7.2",
+    "webpack-node-externals": "^3.0.0"
+  }
+}
