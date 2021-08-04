@@ -2,6 +2,8 @@
 
 This is a simple CLI Tool for generating REST APIs with Node-JS with Express-JS.
 
+## Disclaimer: Them Bones is still on Early Development and the majority of things you will read here anre NOT yet implemented.
+
 ## Things included here:
 
 - Mails with Node-Mailer
@@ -42,7 +44,7 @@ Them Bones has already a configuration for your .env files, to make it work navi
 
 Please take in mind that you need your .env to be named like this to make it work:
 
-The name should be composed of an NODE_ENV correct value followed by .env _NODE_ENV_.env, for example `production.env` or `development.env`
+The name should be composed of an NODE*ENV correct value followed by .env \_NODE_ENV*.env, for example `production.env` or `development.env`
 
 You will find a example-env file inside `src/config/env/` with all the parameters you need to set, you can eassily change the name of that file to something like `production.env` and change the values for the once you need on the .env file.
 

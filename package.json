@@ -1,6 +1,6 @@
 {
   "name": "them-bones",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "this is a skeleton for a node API with express, mongoose, dotenv, nodemailer, webpack, jest and more.",
   "main": "index.js",
   "bin": {
