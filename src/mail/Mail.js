@@ -1,6 +1,6 @@
 'use strict'
 const nodemailer = require('nodemailer')
-const config = require('../config/config')
+const config = require('../config')
 const serverMail = config.SERVERMAIL
 const userMail = config.USERMAIL
 const passwordMail = config.PASSWORDMAIL

@@ -2,7 +2,7 @@
   "name": "them-bones",
   "version": "0.0.1",
   "description": "This is a simple CLI Tool for generating REST APIs with Node-JS with Express-JS.",
-  "main": "index.js",
+  "main": "./src/index.js",
   "bin": {
     "thembones": "./bin/index.js",
     "ThemBones": "./bin/index.js",

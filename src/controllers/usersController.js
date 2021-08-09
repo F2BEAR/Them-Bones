@@ -1,4 +1,4 @@
-const User = require('../Models/User')
+const User = require('../Models/usersModel')
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
 const { ErrorHandler } = require('../middlewares/Error')
@@ -64,7 +64,7 @@ exports.login = (req, res, next) => {
     })
 }
 
-exmports.userUpdate = (req, res, next) => {
+exports.userUpdate = (req, res, next) => {
   User.findOne({ name: req.body.name })
     .then((user) => {
       if (!user) {
