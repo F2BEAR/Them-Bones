@@ -4,11 +4,31 @@ const routes = require('./routes/index')
 const authRoutes = require('./routes/auth')
 const { handleError, ErrorHandler } = require('./middlewares/Error')
 const cors = require('cors')
-const logger = require('morgan')
+const morgan = require('morgan')
+const { logger } = require('./config/logger')
 
-if (process.env.NODE_ENV === 'development') {
-  app.use(logger('dev'))
+logger.stream = {
+  write: function (message) {
+    logger.http(message)
+  }
 }
+
+app.get('/logger', (_, res) => {
+  logger.error('This is an error log')
+  logger.warn('This is a warn log')
+  logger.info('This is a info log')
+  logger.http('This is a http log')
+  logger.verbose('This is a verbose log')
+  logger.debug('This is a debug log')
+
+  res.send('logged')
+})
+
+app.use(
+  morgan(':method :url :status - :response-time ms - from :remote-addr', {
+    stream: logger.stream
+  })
+)
 
 app.use(express.json(), express.text())
 app.use(

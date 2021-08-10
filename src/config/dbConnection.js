@@ -3,6 +3,8 @@ const config = require('.')
 const mongoURI = config.MONGOURI
 const mongoPort = config.MONGOPORT
 const mongoDB = config.MONGODB
+const { logger } = require('./logger')
+
 mongoose
   .connect(`mongodb://${mongoURI}:${mongoPort}/${mongoDB}`, {
     useNewUrlParser: true,
@@ -11,12 +13,12 @@ mongoose
     useFindAndModify: false
   })
   .then((connection) => {
-    console.log('Successfully connected to MongoDB!')
+    logger.info('Successfully connected to MongoDB!')
     return connection
   })
   .catch((err) => {
-    console.error('Unable to connect to MongoDB :(')
-    console.error(err)
+    logger.error('Unable to connect to MongoDB :(')
+    logger.error(err)
     return err
   })
 

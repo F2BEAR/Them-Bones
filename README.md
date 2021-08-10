@@ -57,4 +57,4 @@ You will find a file called _example-env_ under `src/config/env/` with all the p
 
 # Licence
 
-This library was created by Facundo Carbonel (@F2BEAR) for Stratus in 2021 and is under and an MIT License.
+This library was created by Facundo Carbonel (@F2BEAR) for Stratus in 2021 and is under an MIT License.
