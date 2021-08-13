@@ -1,6 +1,6 @@
 # Them Bones
 
-![GitHub](https://img.shields.io/github/license/F2BEAR/them-bones)
+![GitHub](https://img.shields.io/github/license/F2BEAR/them-bones) ![GitHub package.json version](https://img.shields.io/github/package-json/v/F2BEAR/them-bones) ![GitHub repo size](https://img.shields.io/github/repo-size/F2BEAR/them-bones)
 
 This is a simple CLI tool for generating REST APIs with Node-JS with Express-JS.
 
