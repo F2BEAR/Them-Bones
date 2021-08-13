@@ -1,5 +1,7 @@
 # Them Bones
 
+![GitHub](https://img.shields.io/github/license/F2BEAR/them-bones)
+
 This is a simple CLI tool for generating REST APIs with Node-JS with Express-JS.
 
 ### Disclaimer: Them Bones is still in Early Development, and most things you will read here are NOT yet implemented.
